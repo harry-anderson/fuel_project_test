@@ -1,0 +1,14 @@
+namespace: fuel_examples
+identifier: hello_index
+contract_id: ~
+# ABI files are _not_ required. However, in this example, since we already wrote
+# and compiled our smart contract, we'll include it's ABI JSON output here.. Note
+# that we are using assets located in the examples directory of the fuel-indexer 
+# repository
+abi: ../../contracts/greeting/out/debug/greeting-abi.json
+start_block: 1
+report_metrics: true
+graphql_schema: ./schema/hello_indexer.schema.graphql
+module:
+  wasm: ~
+
